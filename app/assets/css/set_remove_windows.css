@@ -1,0 +1,24 @@
+._set_remove_window {
+  position: fixed;
+  width: auto;
+  padding: 0 10px;
+  height: 30px;
+  border-radius: 10px;
+  border: var(--middle-border);
+  background-color: var(--card-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+._remove_complete_text {
+  color: var(--all-completed-color);
+}
+
+._set_complete_text {
+  color: var(--completed-color);
+}
+
+._mouseover_text {
+  color: var(--font-color);
+}

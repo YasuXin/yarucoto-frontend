@@ -1,0 +1,14 @@
+._clear {
+  background-color: var(--clear-bg-color)!important;
+}
+._clear:focus {
+  background-color: var(--focus-clear-bg-color)!important;
+  border-color: var(--focus-clear-border-color)!important;
+  box-shadow: var(--clear-shadow)!important;
+  -webkit-box-shadow: var(--clear-shadow)!important;
+}
+._checked::after {
+  content: "✓";
+  color: var(--completed-color);
+  font-size: 1.5rem;
+}

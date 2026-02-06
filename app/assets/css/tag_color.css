@@ -1,0 +1,47 @@
+._c_default {
+  color: var(--font-color)!important;
+  border: 1.5px solid var(--br-default)!important;
+  background-color: var(--bg-default)!important;
+}
+
+._c_red {
+  color: var(--f-red)!important;
+  border: 1.5px solid var(--br-red)!important;
+  background-color: var(--bg-red)!important;
+}
+
+._c_orange {
+  color: var(--f-orange)!important;
+  border: 1.5px solid var(--br-orange)!important;
+  background-color: var(--bg-orange)!important;
+}
+
+._c_yellow {
+  color: var(--f-yellow)!important;
+  border: 1.5px solid var(--br-yellow)!important;
+  background-color: var(--bg-yellow)!important;
+}
+
+._c_green {
+  color: var(--f-green)!important;
+  border: 1.5px solid var(--br-green)!important;
+  background-color: var(--bg-green)!important;
+}
+
+._c_blue {
+  color: var(--f-blue)!important;
+  border: 1.5px solid var(--br-blue)!important;
+  background-color: var(--bg-blue)!important;
+}
+
+._c_indigo {
+  color: var(--f-indigo)!important;
+  border: 1.5px solid var(--br-indigo)!important;
+  background-color: var(--bg-indigo)!important;
+}
+
+._c_purple {
+  color: var(--f-purple)!important;
+  border: 1.5px solid var(--br-purple)!important;
+  background-color: var(--bg-purple)!important;
+}

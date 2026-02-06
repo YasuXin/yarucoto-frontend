@@ -1,0 +1,17 @@
+._page_link {
+  background-color: var(--pagination-bg-color);
+  color: var(--pagination-font-color);
+  border: none;
+}
+._page_link:hover {
+  background-color: var(--no-active-task-box-bg-color);
+}
+._pagination {
+  justify-content: center;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  border-radius: var(--bs-pagination-border-radius)!important;
+}
+._disabled {
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.2);
+}

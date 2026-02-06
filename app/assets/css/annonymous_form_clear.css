@@ -1,0 +1,14 @@
+._clear {
+  background-color: rgba(200,255,200, 0.7)!important;
+}
+._clear:focus {
+  background-color: rgba(200,255,200, 0.3)!important;
+  border-color: rgb(30,255,60)!important;
+  box-shadow: 0 0 0 .25rem rgba(13, 255, 60, 0.25)!important;
+  -webkit-box-shadow: 0 0 0 .25rem rgba(13, 255, 60, 0.25)!important;
+}
+._checked::after {
+  content: "✓";
+  color: var(--completed-color);
+  font-size: 1.5rem;
+}

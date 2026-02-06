@@ -1,0 +1,167 @@
+._image, ._explain_image, ._explain_image_narrow {
+  background-repeat: no-repeat;
+}
+._explain_image, ._explain_image_narrow {
+  background-size: contain;
+}
+._explain_text_fadein {
+  opacity: 0;
+  animation-name: textFadein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-delay: 0.25s;
+}
+@keyframes textFadein {
+  0% {transform: translateY(50px); opacity: 0;}
+  100% {transform: translateY(0); opacity: 1;}
+}
+._to_signup_btn_parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+._explain_box {
+  padding: 0 24px;
+  display: flex;
+  margin-bottom: 40px;
+  height: 100%;
+}
+._explain_text_box h5 {
+  border-left: 10px solid #4d6ea0;
+  border-bottom: 2px solid #4d6ea0;
+  padding: 5px 0 5px 10px;
+  width: 100%;
+}
+._explain_image_parent {
+  width: 80%;
+  height: 100%;
+  background-color: rgba(100,100,100,0.1);
+  border-radius: 10px;
+  padding: 10px;
+}
+._explain_image {
+  width: 100%;
+  height: 100%;
+}
+._explain_image_narrow {
+  display: none;
+}
+._explain_text_box {
+  width: 24rem;
+  margin-right: 20px;
+  border-radius: 10px;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+}
+._explain_text_box:nth-child(2n) {
+  margin-right: 0;
+  margin-left: 20px;
+}
+._explain_image_fadein {
+  opacity: 0;
+  animation-name: explainImageFadein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-delay: 0.25s;
+}
+@keyframes explainImageFadein {
+  0% {transform: translateX(10%); opacity: 0;}
+  100% {transform: translateX(0); opacity: 1;}
+}
+._explain_image_fadein_reverse {
+  opacity: 0;
+  animation-name: explainImageFadeinReverse;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-delay: 0.5s;
+}
+@keyframes explainImageFadeinReverse {
+  0% {transform: translateX(-10%); opacity: 0;}
+  100% {transform: translateX(0); opacity: 1;}
+}
+._title {
+  display: inline-block;
+  opacity: 0;
+  animation-name: titleFadein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-delay: calc(sibling-index() * 0.05s + 0.2s);
+}
+@keyframes titleFadein {
+  0% {transform: translateY(-1rem); opacity: 0;}
+  100% {opacity: 1;}
+}
+@media (max-width: 1200px) {
+  ._explain_text_box {
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  ._explain_box {
+    padding: 0 1rem;
+  }
+  ._explain_text_box {
+    width: 100%;
+    margin: 0 0 24px 0 !important;
+    align-items: start;
+  }
+  ._explain_text_box p {
+    padding: 0 10px;
+  }
+  ._explain_text_box h5 {
+    border-left: 10px solid #4d6ea0;
+    border-bottom: 2px solid #4d6ea0;
+    padding: 5px 0 5px 10px;
+    width: 100%;
+  }
+  ._explain_image_parent {
+    width: 100%;
+    height: 55vw;
+  }
+}
+@media (max-width: 576px) or (orientation: portrait) {
+  ._explain_box_parent {
+    height: auto;
+    padding: 0;
+    background-image: none !important;
+    background-color: transparent;
+  }
+  ._explain_text_box {
+    width: 100%;
+    margin: 0 0 24px 0 !important;
+    align-items: start;
+    padding: 20px 10px;
+  }
+  ._explain_text_box p {
+    padding: 0 10px;
+  }
+  ._explain_text_box:nth-child(2n) {
+    margin-left: 0;
+  }
+  ._explain_text_box h4 {
+    border-left: 10px solid #4d6ea0;
+    border-bottom: 2px solid #4d6ea0;
+    padding: 5px 0 5px 10px;
+    width: 100%;
+  }
+  ._explain_image_parent {
+    width: 100%;
+    height: 90vw;
+  }
+  ._explain_image {
+    display: none;
+  }
+  ._explain_image_narrow {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}

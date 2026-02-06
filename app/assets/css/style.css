@@ -1,0 +1,227 @@
+html {
+  font-size: 16px;
+}
+@media (max-width: 1400px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 13px;
+  }
+}
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  word-wrap: break-word;
+}
+main {
+  position: relative;
+  height: auto;
+  min-height: 600px;
+  width: calc(100vw - 205px);
+  margin: 16px;
+  border-radius: 10px;
+}
+@media (max-width: 1200px) {
+  main {
+    width: calc(100vw - 114px);
+  }
+}
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+    min-height: calc(100vh - 40px);
+    margin: 0;
+    border-radius: 0 !important;
+  }
+}
+@media (max-width: 576px) {
+  main {
+    width: 100%;
+    min-height: calc(100vh - 40px);
+    margin: 0;
+    border-radius: 0 !important;
+  }
+}
+#content {
+  height: auto;
+  min-height: calc(100vh - 40px);
+}
+@media (max-width: 960px) {
+  #content {
+    justify-content: center;
+  }
+}
+#main-title h3 {
+  margin: 30px 0 12px;
+}
+
+#main-child {
+  animation-name: mainChildAnimation;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+@keyframes mainChildAnimation {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+#return-routines-parent {
+  width: 90%;
+  padding-left: 40px;
+  margin-bottom: 16px;
+  display:flex;
+}
+#return-tags-parent {
+  width: 400px;
+  padding-left: 30px;
+  margin-bottom: 16px;
+  display:flex;
+}
+
+._link_to_register_parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  padding: 0 15px;
+}
+
+._link_to_register {
+  width: 200px;
+  border-radius: 20px;
+  animation-name: linkToTaskRegisterAnimation;
+  animation-duration: 0.7s;
+}
+
+@keyframes linkToTaskRegisterAnimation {
+  0% {scale: 0.8;}
+  15% {scale: 1;}
+  35% {scale: 0.9;}
+  70% {scale: 1.05;}
+  100% {scale: 1;}
+}
+
+._hidden {
+  display: none !important;
+}
+
+._normal_link {
+  cursor: pointer;
+  color: var(--logo-font-color) !important;
+}
+
+._normal_link:any-link {
+  color: var(--logo-font-color) !important;
+}
+
+._normal_link:hover {
+  color: var(--font-color) !important;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: var(--sidebar-link-font-color);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+input,
+textarea,
+select {
+  background-color: var(--form-bg-color) !important;
+  border-color: var(--form-border-color) !important;
+  color: var(--font-color) !important;
+}
+textarea {
+  border-radius: 0 !important;
+}
+.form-check-input:checked {
+  background-color: #0d6efd !important;
+}
+
+.form-check-input:hover {
+  cursor: pointer;
+}
+
+input[type=date]:hover,
+input[type=time]:hover {
+  cursor: pointer;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--placeholder-color) !important;
+}
+
+button[disabled=true] {
+  background-color: #999 !important;
+  cursor: not-allowed !important;
+  color: gray !important;
+}
+
+/* IE */
+input:-ms-input-placeholder {
+  color: var(--placeholder-color) !important;
+}
+
+/* Edge */
+input::-ms-input-placeholder {
+  color: var(--placeholder-color) !important;
+}
+
+._no_shadow {
+  box-shadow: none !important;
+}
+
+._disabled {
+  background-color: var(--disabled-form-bg-color) !important;
+  cursor: not-allowed !important;
+  color: var(--disabled-form-font-color) !important;
+}
+
+#success-message-parent {
+  position: absolute;
+  width: 360px;
+  top: 0;
+  left: calc(50% - 150px);
+  animation-name: successMessageAnimation;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes successMessageAnimation {
+  0% {opacity: 0;transform: translateY(-60px);}
+  20% {opacity: 1;transform: translateY(0);}
+  80% {opacity: 1;transform: translateY(0);}
+  100% {opacity: 0;transform: translateY(-60px);}
+}
+
+#tag1default,
+#tag2default,
+#tag3default,
+#color-default {
+  color: var(--font-color) !important;
+  background-color: var(--card-bg-color) !important;
+}
+
+._has_errors {
+  color: var(--bs-red);
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--font-color)!important;
+}
+
+@media (max-width: 576px) {
+  #submitBtn {
+    width: 100%;
+  }
+  ._link_to_register {
+    width: 100%;
+  }
+}

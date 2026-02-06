@@ -1,0 +1,80 @@
+.btn {
+  color: var(--btn-font-color) !important;
+}
+
+._btn_primary {
+  background-color: var(--theme-color1) !important;
+  border: none;
+}
+
+._btn_primary:hover {
+  background-color: var(--theme-color1-hover) !important;
+  cursor: pointer;
+}
+
+._btn_goals {
+  background-color: var(--theme-color3) !important;
+  border: none;
+}
+
+._btn_goals:hover {
+  background-color: var(--theme-color3-hover) !important;
+  cursor: pointer;
+}
+
+._btn_past_completed_rate {
+  background-color: var(--theme-color4) !important;
+  border: none;
+}
+
+._btn_past_completed_rate:hover {
+  background-color: var(--theme-color4-hover) !important;
+  cursor: pointer;
+}
+
+._btn_big {
+  background-color: var(--theme-color2) !important;
+  border: none;
+  width: 240px;
+  border-radius: 30px;
+}
+
+._btn_big:hover {
+  background-color: var(--theme-color2-hover) !important;
+  cursor: pointer;
+}
+
+._btn_gold_parent {
+  padding: 0 !important;
+}
+
+._btn_gold {
+  background: var(--bg-gold);
+  color: white;
+  background-size: 600%;
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+._bg_gold {
+  background: var(--bg-gold);
+  color: black;
+  background-size: 600%;
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+}
+
+@keyframes slide {
+  0% {background-position: 0 0; }
+  100% {background-position: 100% 0;}
+}
+.btn-danger {
+  border: none !important;
+}
+.btn-success {
+  border: none !important;
+}

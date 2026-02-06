@@ -1,0 +1,21 @@
+html{
+  scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-bg-color);
+}
+::-webkit-scrollbar {
+  width: 1.2rem;
+  border-top-right-radius: var(--bs-border-radius);
+  border-bottom-right-radius: var(--bs-border-radius);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+}
+::-webkit-resizer {
+  background: var(--bg-color);
+  border: none;
+  border-bottom-right-radius: var(--bs-border-radius);
+}
+::-webkit-scrollbar-button {
+  display: block;
+  height: 0.8rem;
+  border-radius: var(--bs-border-radius);
+}

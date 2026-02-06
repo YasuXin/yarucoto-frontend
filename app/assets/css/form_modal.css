@@ -1,0 +1,44 @@
+._modal_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+._modal_window {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: var(--font-color);
+  position: fixed;
+  top: 5vh;
+  right: 0;
+  width: 100%;
+  max-width: 600px;
+  height: 90vh;
+  padding: 20px;
+  background-color: var(--card-bg-color);
+  overflow-y: auto;
+  box-shadow: var(--task-shadow);
+}
+
+h4 {
+  margin: 20px 0 ;
+}
+@media (max-width: 767.5px) {
+  ._modal_window {
+    top: 0;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  ._modal_window {
+    padding: 10px;
+  }
+}
